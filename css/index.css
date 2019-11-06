@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #070c24;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contain {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 900px;
+  height: 600px;
+  background: #fff;
+  margin: 20px;
+}
+.mgBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background: #006dbc;
+}
+.mgBox img {
+  position: relative;
+  width: 700px;
+  transform: rotate(-30deg);
+  left: -50px;
+}
+.mgBox:before {
+  content: "Nike";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  opacity: 0.2;
+  color: #000;
+  font-size: 8em;
+  font-weight: 800;
+}
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+}
+.details h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5em;
+  line-height: 1em;
+  color: #444;
+}
+.details h2 span {
+  text-transform: uppercase;
+  font-size: 0.4em;
+  letter-spacing: 2px;
+  color: #999;
+}
+.details p {
+  max-width: 85%;
+  margin-left: 15px;
+  color: #333;
+}
+.details h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5em;
+  color: #a2a2a2;
+  float: left;
+}
+.details button {
+  background: #006dbc;
+  color: #fff;
+  display: inline-block;
+  border: none;
+  box-shadow: none;
+  padding: 15px 20px;
+  margin-top: 2px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 40px;
+  float: right;
+}
+
+@media (max-width: 1080px) {
+  .contain {
+    height: auto;
+  }
+  .mgBox {
+    padding: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+  }
+  .mgBox img {
+    left: initial;
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+  .details {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .details p {
+    max-width: 100%;
+    margin-left: 0;
+    color: #333;
+    font-size: 15px;
+  }
+}
